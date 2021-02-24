@@ -1,12 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <!-----header -->
+    <header class="jumbotron">
+        <h1 class="title">Weather Dashboard</h1>
+        <p id="currentDay"></p>
+    </header>
+    <div class="currentDay"></div>
+    <h1 class="h1">Search for a City: </h1>
+    <!-----search bar----->
+    <div class="input-group mb-3">
+        <input type="text" class="cityInput" placeholder="City" aria-label="Recipient's username"
+            aria-describedby="button-addon2">
+        <button class="saveBtn" type="button" id="button-addon2">Search</button>
+    </div>
+    <!-------list card------>
+
+    <section class="listCard" style="width: 18rem;">
+        <div class="card-header">
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A third item</li>
+        </ul>
+        </div>
+    </section>
+
+    <!----------forcast card------------->
+    <section class="forcastDisplayCard">
+        <div class="row text-light">
+            <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                <p id=""></p>
+                <p id=""></p>
+                <p>Temperature:<span id="temp"></span></p>
+                <p>Humidity:<span id="hum"></span></p>
+                <p>Wind Speed:<span id="wind"></span></p>
+                <p>UV Index:<span id="uv"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <!------------five day forcast cards------------------------>
+    <section class="fiveForcastCard">
+        <h2 id="fiveDayForcastTitle">Five Day Forcast</h2>
+        <div class="dayOne" style="width: 18rem;">
+            <img src="#" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        
+
+        <div class="dayTwo" style="width: 18rem;">
+            <img src="#" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="dayThree" style="width: 18rem;">
+            <img src="#" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="dayFour" style="width: 18rem;">
+            <img src="#" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="dayFive" style="width: 18rem;">
+            <img src="#" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> 
+  <script src="script.js"></script>
+
 </body>
+
 </html>
